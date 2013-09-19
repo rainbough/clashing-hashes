@@ -1,0 +1,21 @@
+<html>
+	<head><link rel="stylesheet" href="application.css" />
+	</head>
+	<body>
+		<header><h1>Hello World!<%= %></h1></header>
+			<p>
+				
+				<% if @JellyMonster = "submit" %>
+  			<p>You just submitted the form!</p>
+  				<h1><%= @params %></h1>
+				<% end %>
+			</p>
+
+			<br>
+			<form name="input" actions="/twitter" methods="post">
+				Twitter Query: <input type="text" name="JellyHead">
+				<input type="text" name="JellyFish">
+				<input type="submit" value="Submit" name="JellyMonster">
+			</form>
+</body>
+</html>
